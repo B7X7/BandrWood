@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BandrWood management app</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header class="header">
+	<a href="#home" class="logo">
+		<i class="fa fa-shopping-basket"></i> BandrWood
+	</a>
+
+	<nav class="navbar">
+		<a href="#home">Home</a>
+		<a href="#products">Products</a>
+		<a href="contact_us.html">Contact us</a>
+		<a href="about_us.html">About us</a>
+	</nav>
+
+	<div class="icons">
+		<a href="cart_page.html"><div class="fa fa-shopping-cart"></div></a>
+		<a href="login.html"><div class="fa fa-user"></div></a>
+	</div>
+</header>
+
+<section class="home" id="home">
+	<img src="banner.jpg" alt="banner" class="banner-img">
+	<div class="content">
+		<h3>Fresh And <span>Organic</span> Products For You</h3>
+		<p>This Website is designed by our Team.</p>
+		<a href="#products" class="btn">shop now</a>
+	</div>
+</section>
+
+<section class="products" id="products">
+		<h1 class="heading"> our <span>products</span></h1>
+
+	<div class="products-toolbar">
+		<div class="products-search">
+			<input type="text" id="productSearchInput" placeholder="Search for products...">
+			<button id="productSearchBtn" class="btn">Search</button>
+		</div>
+
+		<div class="products-filters">
+		<button class="filter-btn active" data-category="all">All</button>
+		<button class="filter-btn" data-category="Fresh Fruits">Fruits</button>
+		<button class="filter-btn" data-category="Fresh Vegetables">Vegetables</button>
+		<button class="filter-btn" data-category="Fresh Meat">Meat</button>
+		<button class="filter-btn" data-category="Dairy Products">Dairy</button>
+		<button class="filter-btn" data-category="Bakery">Bakery</button>
+		<button class="filter-btn" data-category="Beverages">Beverages</button>
+		<button class="filter-btn" data-category="Other">Other</button>
+		</div>
+	</div>
+
+	<div class="box-container">
+		<p style="grid-column: 1/-1; text-align: center; font-size: 2rem; color: #666;">Loading products...</p>
+	</div>
+</section>
+
+<section class="footer" id="contact">
+	<div class="box-container">
+		<div class="box">
+			<h3> BandrWood <i class="fa fa-shopping-basket"></i></h3>
+			<p>Your trusted local BandrWood store for fresh and quality products.</p>
+		</div>
+
+		<div class="box">
+			<h3> Contact Info </h3>
+			<a href="javascript:void(0)" class="links"> <i class="fa fa-github"></i>GitHub project here</a>
+			<span class="links"> <i class="fa fa-phone"></i> +966 568858599</span>
+			<a href="mailto:universityofjeddah@uj.edu.sa" class="links"> <i class="fa fa-envelope"></i> universityofjeddah@uj.edu.sa</a>
+			<a href="https://www.google.com/maps/place/Jeddah" target="_blank" class="links"> <i class="fa fa-map-marker"></i> Jeddah, Saudi Arabia</a>
+		</div>
+	</div>
+</section>
+
+<!-- تحميل ملف JavaScript للمنتجات -->
+<script src="js/auth.js"></script>
+<script src="js/products.js"></script>
+
+</body>
+</html>

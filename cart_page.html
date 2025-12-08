@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart - BandrWood</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- header section -->
+<header class="header">
+	<a href="index.html" class="back-btn">
+		<i class="fa fa-arrow-left"></i> Continue Shopping
+	</a>
+	<a href="index.html" class="logo">
+		<i class="fa fa-shopping-basket" aria-hidden="true"></i> BandrWood
+	</a>
+
+	<div class="icons">
+		<a href="cart_page.html"><div class="fa fa-shopping-cart"></div></a>
+		<a href="login.html"><div class="fa fa-user"></div></a>
+	</div>
+</header>
+
+<!-- cart section -->
+<section class="cart-section">
+	<h1 class="cart-heading">Shopping <span>Cart</span></h1>
+
+	<div class="cart-container" id="cartContainer">
+		<div class="cart-items" id="cartItems">
+		</div>
+
+		<div class="cart-summary">
+			<h3>Order Summary</h3>
+			<div class="summary-row">
+				<span>Subtotal:</span>
+				<span id="subtotal">$0.00</span>
+			</div>
+			<div class="summary-row">
+				<span>Shipping:</span>
+				<span id="shipping">$5.00</span>
+			</div>
+			<div class="summary-row">
+				<span>Tax (15%):</span>
+				<span id="tax">$0.00</span>
+			</div>
+			<div class="summary-row total">
+				<span>Total:</span>
+				<span id="total">$0.00</span>
+			</div>
+			<button class="btn checkout-btn" onclick="checkout()">
+				<i class="fa fa-credit-card"></i> Proceed to Checkout
+			</button>
+			<a href="index.html" class="continue-shopping">
+				<i class="fa fa-arrow-left"></i> Continue Shopping
+			</a>
+		</div>
+	</div>
+</section>
+
+<script src="js/auth.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/ui.js"></script>
+
+
+
+</body>
+</html>

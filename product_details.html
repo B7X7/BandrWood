@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Product Details - BandrWood</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+	<a href="index.html" class="back-btn">
+		<i class="fa fa-arrow-left"></i> Back to Shop
+	</a>
+	<a href="index.html" class="logo">
+		<i class="fa fa-shopping-basket"></i> BandrWood
+	</a>
+
+	<div class="icons">
+		<a href="cart_page.html"><div class="fa fa-shopping-cart"></div></a>
+		<a href="login.html"><div class="fa fa-user"></div></a>
+	</div>
+
+</header>
+
+<section class="product-details">
+	<div class="product-container">
+
+		<div class="product-images">
+			<div class="main-image">
+				<img src="products/placeholder.png" alt="Product" id="mainImage">
+			</div>
+		</div>
+
+		<!-- Product Info -->
+		<div class="product-info">
+			<h1>Loading...</h1>
+			<div class="product-price">
+				<span class="current-price">$0.00</span>
+			</div>
+
+			<div class="product-description">
+				<h3>Product Description</h3>
+				<p>Loading product description...</p>
+			</div>
+
+			<div class="product-options">
+				<div class="option-group">
+					<h4>Quantity</h4>
+					<div class="quantity-selector">
+						<div class="quantity-controls">
+							<button onclick="decreaseQuantity()">-</button>
+							<input type="number" id="quantity" value="1" min="1" max="10" readonly>
+							<button onclick="increaseQuantity()">+</button>
+						</div>
+						<span style="font-size: 1.6rem; color: var(--light-color);">Per kg</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="action-buttons">
+				<button class="btn btn-add-cart" onclick="addToCart()">
+					<i class="fa fa-shopping-cart"></i> Add to Cart
+				</button>
+			</div>
+
+			<div class="product-meta">
+				<div class="meta-item">
+					<strong>Category:</strong>
+					<span>-</span>
+				</div>
+				<div class="meta-item">
+					<strong>Availability:</strong>
+					<span style="color: var(--green);">-</span>
+				</div>
+				<div class="meta-item">
+					<strong>SKU:</strong>
+					<span>-</span>
+				</div>
+				<div class="meta-item">
+					<strong>Tags:</strong>
+					<span>-</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script src="js/auth.js"></script>
+<script src="js/products.js"></script>
+<script src="js/product_details.js"></script>
+
+
+</body>
+</html>

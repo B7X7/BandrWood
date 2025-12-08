@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product - BandrWood Admin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="back-btn">
+        <i class="fa fa-arrow-left"></i> Back to Shop
+    </a>
+    <a href="index.html" class="logo">
+        <i class="fa fa-shopping-basket"></i> BandrWood
+    </a>
+</header>
+
+<div class="admin-container">
+    <div class="admin-header">
+        <h1><i class="fa fa-plus-circle"></i> Add New Product</h1>
+        <p style="font-size: 1.5rem; color: var(--light-color);">Fill in the details to add a new product</p>
+    </div>
+
+    <form id="addProductForm">
+        <div class="form-grid">
+            <div class="form-group">
+                <label for="productName">Product Name *</label>
+                <input type="text" id="productName" required placeholder="e.g. Fresh Apple">
+            </div>
+
+            <div class="form-group">
+                <label for="productPrice">Price (SAR) *</label>
+                <input type="number" id="productPrice" step="0.01" required placeholder="e.g. 12.99">
+            </div>
+
+            <div class="form-group">
+                <label for="productCategory">Category *</label>
+                <select id="productCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Fresh Fruits">Fresh Fruits</option>
+                    <option value="Fresh Vegetables">Fresh Vegetables</option>
+                    <option value="Fresh Meat">Fresh Meat</option>
+                    <option value="Dairy Products">Dairy Products</option>
+                    <option value="Bakery">Bakery</option>
+                    <option value="Beverages">Beverages</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="productSKU">SKU *</label>
+                <input type="text" id="productSKU" required placeholder="e.g. APP-006">
+            </div>
+
+            <div class="form-group full-width">
+                <label>Product Image *</label>
+                <div class="file-upload-wrapper">
+                    <label for="productImage" class="file-upload-label">
+                        <i class="fa fa-cloud-upload"></i>
+                        <div class="file-upload-text">
+                            <p>Click to upload product image</p>
+                            <small>Supported: JPG, PNG, GIF (Max 5MB)</small>
+                        </div>
+                    </label>
+                    <input type="file" id="productImage" accept="image/*" required>
+                    <img id="imagePreview" class="image-preview" alt="Preview">
+                </div>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="productTags">Tags</label>
+                <input type="text" id="productTags" placeholder="e.g. Fresh, Organic, Healthy">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="productDescription">Description *</label>
+                <textarea id="productDescription" required placeholder="Enter detailed product description..."></textarea>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn" id="submitBtn">
+            <i class="fa fa-plus"></i> Add Product
+        </button>
+    </form>
+
+    <!-- قائمة المنتجات -->
+    <div class="products-list">
+        <h2><i class="fa fa-list"></i> Current Products</h2>
+        <div id="productsList"></div>
+    </div>
+</div>
+
+<script src="js/admin_products.js"></script>
+
+</body>
+</html>

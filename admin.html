@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login - BandrWood</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <i class="fa fa-shopping-basket"></i> BandrWood
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="admin.html" class="active">admin</a>
+    </nav>
+
+    <div class="icons">
+        <a href="index.html" class="fa fa-home"></a>
+    </div>
+</header>
+
+<section class="auth-section">
+    <div class="auth-card">
+        <h2 class="auth-title">Admin Login</h2>
+
+        <form id="adminLoginForm" class="auth-form">
+            <div class="form-group">
+                <label for="admin-email">Email</label>
+                <input type="email" id="admin-email" placeholder="Enter admin email">
+                <span class="error-message" id="admin-email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="admin-password">Password</label>
+                <div style="position: relative;">
+                    <input type="password" id="admin-password" placeholder="Enter password">
+                </div>
+            </div>
+
+            <button type="submit" class="btn primary full">Sign In</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>BandrWood</h3>
+            <p>Admin Panel Access</p>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="admin_products.html">Admin Products</a>
+        </div>
+    </div>
+    <div class="credit">created by <span>Bandr</span></div>
+</footer>
+
+<script src="js/admin_login.js"></script>
+<script src="js/ui.js"></script>
+
+</body>
+</html>
